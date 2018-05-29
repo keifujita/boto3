@@ -1,5 +1,5 @@
 FROM centos:7
-RUN yum update -y && yum install -y less vim
+RUN yum update -y && yum install -y bind-utils less vim
 ARG UID=1000
 ARG GID=1000
 RUN groupadd --gid $GID boto3
